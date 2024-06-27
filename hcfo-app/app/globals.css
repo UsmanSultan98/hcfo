@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+#img-radius{
+  border-radius: 50%;
+}
