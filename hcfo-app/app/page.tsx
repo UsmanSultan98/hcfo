@@ -89,7 +89,7 @@ export default function Home() {
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
-          "The true measure of any society can be found in how it treats its most vulnerable members." <br /> -Mahatma Gandhi
+          &quote;The true measure of any society can be found in how it treats its most vulnerable members.&quote; <br /> -Mahatma Gandhi
           </p>
         </a>
 
@@ -110,6 +110,7 @@ export default function Home() {
           </p>
         </a>
       </div>
+      
     </main>
   );
 }
