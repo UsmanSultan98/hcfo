@@ -1,5 +1,8 @@
 import React from 'react';
 import Navbar from '../components/navbar';
+import Home from '../components/home';
+import About from '../components/about';
+import Footer from '../components/footer';
 import './style.css';
 
 
@@ -8,8 +11,9 @@ const HomePage: React.FC = () => {
     <>
     <div>
     <Navbar />
-    <div id='spinner'>
-    </div>
+    <Home />
+    <About />
+    <Footer />
     </div>
     </>
   );

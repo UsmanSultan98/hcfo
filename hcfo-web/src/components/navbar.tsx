@@ -1,7 +1,8 @@
 "use client";
 
 import React , { useState} from 'react';
-
+import Logo from "../images/logo.jpg";
+import Image from 'next/image';
 
 function Navbar(){
 
@@ -11,9 +12,15 @@ function Navbar(){
     };
 
         return <nav className='bg-blue-500 p-4'>
-        <div className="flex items-center justify-between">
-            {/* logo code */}
-            <div className="text-white text-2xl font-bold">ReactTailwind</div>
+              <div className="flex items-center justify-between">
+           
+                {/* logo code */}
+        <Image src={Logo} alt='logo' className="w-12"></Image>
+                
+       
+
+                    {/* Organization Name */}
+            <div className="text-white text-2xl font-bold">Heal The Children&apos;s Future Organization</div>
                <div className="md:hidden">
                 <button className='text-white' onClick={toggleMenu}>
                 <svg
@@ -36,7 +43,8 @@ function Navbar(){
                     <li><a href="#" className='text-white'>Contacts</a></li>
                 </ul>
         </div>
-        {/* mobile menue */}
+
+        {/* mobile menue  hamburger*/}
 
         {isMenuOpen ? (
             <ul className='flex-col md:hidden'>
